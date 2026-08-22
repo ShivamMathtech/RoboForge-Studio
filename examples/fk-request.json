@@ -1,0 +1,36 @@
+{
+  "robot": {
+    "id": "example-planar",
+    "name": "2-DOF Planar Arm",
+    "description": "API example robot",
+    "convention": "standard",
+    "educational": true,
+    "payload_kg": 1.0,
+    "joints": [
+      {
+        "id": "joint-1",
+        "name": "Shoulder",
+        "type": "revolute",
+        "axis": [0, 0, 1],
+        "dh": { "a": 0.8, "alpha": 0, "d": 0, "theta_offset": 0 },
+        "limit": { "lower": -3.14159, "upper": 3.14159, "velocity": 2, "acceleration": 5, "torque": 100 },
+        "damping": 0.05,
+        "friction": 0,
+        "mass": 2
+      },
+      {
+        "id": "joint-2",
+        "name": "Elbow",
+        "type": "revolute",
+        "axis": [0, 0, 1],
+        "dh": { "a": 0.8, "alpha": 0, "d": 0, "theta_offset": 0 },
+        "limit": { "lower": -3.14159, "upper": 3.14159, "velocity": 2, "acceleration": 5, "torque": 100 },
+        "damping": 0.05,
+        "friction": 0,
+        "mass": 1
+      }
+    ]
+  },
+  "q": [0.785398, -0.523599]
+}
+
